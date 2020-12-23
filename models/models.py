@@ -105,7 +105,7 @@ class BaseModel(object):
             load_path), 'Weights file not found. Have you trained a model!? We are not providing one' % load_path
 
         network.load_state_dict(torch.load(load_path))
-        print 'loaded net: %s' % load_path
+        print ('loaded net: %s' % load_path)
 
     def update_learning_rate(self):
         pass
